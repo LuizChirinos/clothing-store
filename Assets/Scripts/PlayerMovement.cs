@@ -1,3 +1,4 @@
+using ClothingStore.Input;
 using UnityEngine;
 
 namespace ClothingStore.Player

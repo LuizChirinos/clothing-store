@@ -1,32 +1,12 @@
+using System.Net.Sockets;
 using UnityEngine;
 
 namespace ClothingStore.Input
 {
-    public class EntityInput : MonoBehaviour, IInput
+    public abstract class EntityInput : MonoBehaviour
     {
-        [SerializeField]
-        private Vector2 inputDirection;
+        protected Vector2 inputDirection;
 
-        public Vector2 InputDirection { get => inputDirection; set => inputDirection = value; }
-
-        private void Start()
-        {
-
-        }
-
-        private void MovementStarted()
-        {
-
-        }
-
-        private void MovementHandled()
-        {
-
-        }
-
-        private void MovementFinished()
-        {
-
-        }
+        public Vector2 InputDirection { get => inputDirection; }
     }
 }
