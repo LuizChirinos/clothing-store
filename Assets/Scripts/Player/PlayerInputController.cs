@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -14,7 +15,14 @@ namespace ClothingStore.Input
             playerInputAction.Player.Movement.started += MovementStarted;
             playerInputAction.Player.Movement.performed += MovementPerformed;
             playerInputAction.Player.Movement.canceled += MovementCanceled;
+
+            playerInputAction.Player.Interact.performed += InteractionPerformed;
             playerInputAction.Enable();
+        }
+
+        private void InteractionPerformed(InputAction.CallbackContext context)
+        {
+            RaiseInteractionEvent();
         }
 
         private void MovementStarted(InputAction.CallbackContext context)

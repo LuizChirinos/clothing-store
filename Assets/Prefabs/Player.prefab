@@ -253,6 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5abaee6934355ef408cc6aa454af95ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  entityInput: {fileID: 6406954916022324829}
   triggerCollider: {fileID: 2119129604635993900}
 --- !u!1 &8576215498140767377
 GameObject:
